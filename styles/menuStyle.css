@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(35, 58, 107);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    background-color: rgb(62, 83, 129);
+    border-radius: 8px;
+    width: 95%;
+    height: 95%;
+    text-align: center;
+    justify-content: center;
+}
