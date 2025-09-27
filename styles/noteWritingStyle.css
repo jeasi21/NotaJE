@@ -1,0 +1,42 @@
+body {
+    font-family: cursive, sans-serif;
+    color: #f7d6a5;
+    background-color: #9c6028;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#writenote {
+    background-color: #c46a21;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(148, 47, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+#writenote label {
+    display: block;
+    font-weight: inherit;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#writenote input[type="text"],
+#writenote textarea {
+    font-family: cursive;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #5ba2ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}

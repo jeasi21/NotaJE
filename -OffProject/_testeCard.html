@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>teste card</title>
   <style>
     body {
@@ -73,6 +74,7 @@
   
 
   <div id="nota">
+  <label>
     <span for="titulo">Titulo</span><br>
     <input type="text" id="titulo"><br><br>
     <span for="subtitulo">Subtitulo</span><br>
@@ -80,6 +82,7 @@
     <span for="notaText">Nota</span><br>
     <textarea name="notaText" id="notaText" cols="25" rows="8"></textarea><br><br>
      <button id="novo">Novo</button>
+</label>
   </div>
   <div id="container"></div>
 
@@ -102,7 +105,7 @@
       //pega o valor do input com id= "titulo":
       titulo.textContent = document.getElementById("titulo").value;
        
-      //igaul o h2
+      //igual o h2
       const subtitulo = document.createElement("h3");
       //igual ao titulo
       subtitulo.textContent = document.getElementById("subtitulo").value;
