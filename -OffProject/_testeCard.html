@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>teste card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    #nota{
+         border: 1px solid #ccc;
+         border-radius: 10px;
+         padding: 15px;
+         margin: 10px 0;
+         box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+         max-width: 500px;
+    }
+    #titulo, #subtitulo{
+        width: 350px;
+        height: 30px;
+        font-size: 18px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        outline: none;
+    }
+    #notaText{
+         width: 350px;
+        font-size: 18px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        outline: none;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      max-width: 300px;
+    }
+
+
+    .card h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .card h3 {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+
+  
+
+  <div id="nota">
+    <span for="titulo">Titulo</span><br>
+    <input type="text" id="titulo"><br><br>
+    <span for="subtitulo">Subtitulo</span><br>
+    <input type="text" id="subtitulo"><br><br>
+    <span for="notaText">Nota</span><br>
+    <textarea name="notaText" id="notaText" cols="25" rows="8"></textarea><br><br>
+     <button id="novo">Novo</button>
+  </div>
+  <div id="container"></div>
+
+  <script>
+    //Seleciona o id do botão:
+    const botao = document.getElementById("novo");
+
+    // selecina a div pelo id container:
+    const container = document.getElementById("container");
+
+    botao.addEventListener("click", () => {
+      // Cria elementos do card:
+      const card = document.createElement("div");
+
+      //Adiciona a class no card:
+      card.classList.add("card");
+      
+      //cria o h2 do titulo:
+      const titulo = document.createElement("h2");
+      //pega o valor do input com id= "titulo":
+      titulo.textContent = document.getElementById("titulo").value;
+       
+      //igaul o h2
+      const subtitulo = document.createElement("h3");
+      //igual ao titulo
+      subtitulo.textContent = document.getElementById("subtitulo").value;
+      
+      //igual aos anteriores:
+      const conteudo = document.createElement("p");
+      //tambem igual aos anteriores:
+      conteudo.textContent = document.getElementById("notaText").value;
+
+      //limpar os campos
+      document.getElementById("titulo").value = '';
+      document.getElementById("subtitulo").value ='';
+      document.getElementById("notaText").value = '';
+
+      // monta o card:
+      card.appendChild(titulo);
+      card.appendChild(subtitulo);
+      card.appendChild(conteudo);
+
+      // adiciona o card ao container
+      container.appendChild(card);
+    });
+  </script>
+
+</body>
+</html>
