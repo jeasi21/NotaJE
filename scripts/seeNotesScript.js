@@ -11,7 +11,7 @@ if(title){
     const card = document.createElement('div');
     card.classList.add('card');
     
-    card.innerHTML = '<h2>'+title+'</h2> <h3>'+subtitle +'</h3> <p>'+note+'</p>';
+    card.innerHTML = '<h2>'+title+'</h2> <h3>'+subtitle +'</h3> <pre>'+note+'</pre>';
 
     container.appendChild(card);
 

@@ -1,7 +1,6 @@
 #appName {
     font-size: 24px;
-    font-weight: bold;
-    color: white;
+color: #f7d6a5;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -9,8 +8,8 @@
 }
 
 button {
-    background-color: rgba(6, 40, 90, 0.342);
-    color: white;
+    background-color: #8f5b39;
+    color: #f7d6a5;
     border: none;
     padding: 10px 20px;
     margin: 5px;
@@ -23,4 +22,13 @@ li {
     padding: 0;
     margin: 0;
     list-style-type: none;
+}
+
+.returnButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+
 }

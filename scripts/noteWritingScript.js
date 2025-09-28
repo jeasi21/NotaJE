@@ -1,6 +1,3 @@
-
-
-  
 /*
     function generateCard(){
       const card = document.createElement("div");

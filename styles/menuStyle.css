@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(35, 58, 107);
+    background-color: #9c6028;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    background-color: rgb(62, 83, 129);
+    background-color: #c46a21;
     border-radius: 8px;
     width: 95%;
     height: 95%;
