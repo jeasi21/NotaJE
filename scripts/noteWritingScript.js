@@ -36,9 +36,9 @@
 */
     const botao = document.getElementById("novo");
 
-    const container = document.getElementById("container");
+    const container = document.querySelector(".container");
 
-    botao.addEventListener("click", () => {
+    botao.addEventListener("click", (event) => { event.preventDefault();
       
       const card = document.createElement("div");
       card.classList.add("card");
@@ -60,7 +60,7 @@
     
       document.getElementById("titulo").value = '';
       document.getElementById("subtitulo").value ='';
-      document.getElementById("notaText").value = '';
+      document.getElementById("note").value = '';
     
     
       card.appendChild(titulo);

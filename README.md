@@ -3,6 +3,7 @@
 A Notation app with focus on offline and user-friendly, is being made by Eclesi and Jeasi.
 
 Structure of the folding
+
 ---
 
 If you want to colaborate please contact us.
@@ -14,8 +15,11 @@ The organization rules are very simple too, you will separate styles and script 
 Example:
 
 NotaJE/scripts (The scripts will have the same structure of the styles, ex: menuScript or textboxScript)
+
 NotaJE/styles (Our css styles, ex: menuStyle or textboxStyle)
+
 NotaJE/assets/ (images, audios, and etc)
+
 NotaJE/ (The root of the project)
 
 # About the project
