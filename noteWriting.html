@@ -6,20 +6,28 @@
     <link rel="stylesheet" href="styles/noteWritingStyle.css">
     <title>Note Wrinting - Page</title>
 </head>
-<body>
+<body >
     <main>
         <div id="writenote">
             <h1>Write your note</h1>
-            <form action="">
+            <form >
                 <label for="title">Título:</label><br>
                 <input type="text" id="title" name="title"><br><br>
+
                 <label for="subtitle">Subtítulo:</label><br>
                 <input type="text" id="subtitle" name="subtitle"><br><br>
+
                 <label for="note">Escreva sua nota:</label><br>
                 <textarea id="note" name="note" rows="10" cols="30"></textarea><br><br>
-                <input type="submit" value="Save Note">
+
+               <!-- <input onclick="teste()" type="submit" value="Save Note" id="novo">-->
+                <button type="submit" value="Save Note" id="novo">Save Note</button>
             </form>
         </div>
+
+        <div class="container"></div>
+        
     </main>
 </body>
+<script src="/scripts/noteWritingScript.js"></script>
 </html>
