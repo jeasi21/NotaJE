@@ -20,10 +20,10 @@
       
       conteudo.textContent = document.getElementById("note").value;
 
-     //
-      document.getElementById("titulo").value = '';
-      document.getElementById("subtitulo").value ='';
-      document.getElementById("notaText").value = '';
+     
+      //document.getElementById("titulo").value = '';
+      //document.getElementById("subtitulo").value ='';
+      //document.getElementById("notaText").value = '';
     
       // monta o card:
       card.appendChild(titulo);
@@ -36,9 +36,9 @@
 */
     const botao = document.getElementById("novo");
 
-    const container = document.querySelector(".container");
+    const container = document.getElementById("container");
 
-    botao.addEventListener("click", (event) => { event.preventDefault();
+    botao.addEventListener("click", () => {
       
       const card = document.createElement("div");
       card.classList.add("card");
@@ -58,9 +58,9 @@
       conteudo.textContent = document.getElementById("note").value;
 
     
-      document.getElementById("titulo").value = '';
-      document.getElementById("subtitulo").value ='';
-      document.getElementById("note").value = '';
+      //document.getElementById("titulo").value = '';
+      //document.getElementById("subtitulo").value ='';
+      //document.getElementById("notaText").value = '';
     
     
       card.appendChild(titulo);
@@ -70,7 +70,8 @@
      
       container.appendChild(card);
     });
-
+/*
     function teste(){
         console.log("Elemento criado");
     }
+        */
