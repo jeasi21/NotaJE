@@ -27,3 +27,10 @@ NotaJE/ (The root of the project)
 The app will be a note taking app, with some simplicity but free and secure, private and obviously, will have some interesting stuff.
 
 I want to focus on: Password Storing, so you can easily store your passwords offline and in a safe location, Folders to organize and a very familiar design. The first versions will be VERY SIMPLE, we will learn while work on the project! ^^
+
+We need to use some effort on it, our first time working together!
+
+## Pratcing Workers:
+
+Jeasi
+Eclesi Paixão
