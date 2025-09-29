@@ -1,5 +1,7 @@
 
 
+
+
 const params = new URLSearchParams(window.location.search);
 
 const title = params.get('title');
