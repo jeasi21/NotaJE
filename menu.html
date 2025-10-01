@@ -15,13 +15,19 @@
             <ul>
                 <li><button type="button" onclick="window.location.href='noteWriting.html'">Criar Nota</button></li>
                 <li><button type="button" onclick="window.location.href='seeNotes.html'">Ver Notas</button></li>
-                <li><button type="button">Salvar na nuvem</button></li>
-                <li><button type="button">Importar</button></li>
-                <li><button type="button">Exportar</button></li>
+                <li><button type="button" disabled>Salvar na nuvem</button></li> 
+                <li><button type="button" onclick="importarNotas()">Importar</button></li>
+                <li class="export-item">
+                    <input type="text" id="noteTitleExport" placeholder="Digite o título para exportar...">
+                    <button type="button" onclick="exportarNotas()">Exportar</button>
+                </li>
             </ul>
         </nav>
     </header>
+    
+    <input type="file" id="importFile" style="display: none;" onchange="carregarArquivo(event)" accept=".txt,.json">
 </main>
+<script src="/scripts/menuScript.js"></script>
 </body>
 
 </html>

@@ -59,3 +59,7 @@ nav button:hover {
         width: auto;
     }
 }
+
+input[type="file"] {
+    display: none;
+}

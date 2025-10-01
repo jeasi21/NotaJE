@@ -12,14 +12,14 @@
         <div id="writenote">
             <h1>Write your note</h1>
               
-            <form action="seeNotes.html" method="get" id="form">
+            <form id="form">
                 <label for="title">Título:</label><br>
                 <input type="text" id="title" name="title" required><br><br>
 
                 <label for="subtitle">Subtítulo:</label><br>
                 <input type="text" id="subtitle" name="subtitle" ><br><br>
 
-                <label for="note">Escreva sua nota:</label><br>
+                <label for="note">Escreva sua nota:</label><br> 
                 <textarea id="note" name="note" rows="10" cols="30"></textarea><br><br>
                 <div id="returnButtons">
                 <button  type="submit" value="Save Note" id="novo">Save Note</button>
@@ -32,6 +32,5 @@
         
     </main>
 </body>
-<!--<script src="/scripts/noteWritingScript.js"></script>-->
-<!--<script src="/scripts/noteWriteLocalStorage.js"></script>-->
+<script src="/scripts/noteWritingScript.js"></script>
 </html>
