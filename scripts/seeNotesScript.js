@@ -30,17 +30,14 @@ const note = params.get('note');
 if (title) {
     const novoRegistro = { title, subtitle, note };
 
-    // pega lista existente no localStorage
     let registros = JSON.parse(localStorage.getItem('registros')) || [];
 
-    // adiciona o novo
     registros.push(novoRegistro);
 
-    // salva de volta
     localStorage.setItem('registros', JSON.stringify(registros));
 }
 
-// função que gera os cards
+
 function gerarCards() {
     const container = document.getElementById('container');
     container.innerHTML = ""; 
@@ -62,7 +59,7 @@ function gerarCards() {
     });
 }
 
-// função para excluir um card
+
 function removerRegistro(index) {
     let registros = JSON.parse(localStorage.getItem('registros')) || [];
     registros.splice(index, 1);
@@ -70,7 +67,7 @@ function removerRegistro(index) {
     gerarCards();
 }
 
-// monta os cards quando a página carregar
+
 window.onload = gerarCards;
 
 
